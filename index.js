@@ -13,7 +13,7 @@ dotenv.config();
 const app=express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin:[ "http://localhost:5173","https://budget-analytics-frontend-95pc.vercel.app/login"],
     credentials: true,
   })
 );
